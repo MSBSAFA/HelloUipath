@@ -1,0 +1,143 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Workflow" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="832.8,1156.8" sap2010:WorkflowViewState.IdRef="Workflow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="80">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Workflow" sap:VirtualizedContainerService.HintSize="475.2,1092" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: RLASSAD : STE MAS 2023 - [TableR]" sap:VirtualizedContainerService.HintSize="433.6,999.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="d92e0d8a-68ed-46cd-8876-234c439bd223" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="375.2,708" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Famille'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d92e0d8a-68ed-46cd-8876-234c439bd223" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="866, 296, 40, 16" ElementType="Text" FriendlyName="'Famille'" Guid="16458668-0334-43d9-a6fc-73cffddcf9c7" InformativeScreenshot="a78833a0bacb1a7f6029f584993b2702.png" NativeTextArgument="Famille" ScopeSelectorArgument="&lt;wnd app='uniges_v4.exe' ctrlname='Principal' /&gt;" SearchSteps="TextNative" TargetType="NativeTextBased" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'WindowsForms10.BUTTON.a…'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d92e0d8a-68ed-46cd-8876-234c439bd223" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="891, 290, 25, 29" ElementType="Button" FriendlyName="'WindowsForms10.BUTTON.a…'" FullSelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='dataGridView1' /&gt;&lt;wnd cls='WindowsForms10.BUTTON.*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='dataGridView1' /&gt;&lt;wnd cls='WindowsForms10.BUTTON.*' /&gt;" Guid="0bb7b60b-9746-4224-9b3c-e86e068f8285" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPNSURBVFhHxZX/TxtlHMf7D8z52+J/QPwRfwGyrHabmcSf/GlmMZm/LQRNJDizzfUHhYkiG9IlC2aoMQpxYQUyQwj0C+3ZL9eulMIV6Rd6dz1sSykdBbp2kCZvn+dcK+Ou0TKKl7wul+funVc+z/O559FIq3s4bv4f6fSME5TLH1xBU/OZumK4OyS7NMMjD0BpbHwDZ7Rv4aa+98j5uOMmTpx4BZ2ffCq7NGazGZTm5mZ0dOhVp+Nl8c1JOHXqNXR3d8suTTa3DcqFt1vrLh359YHs0kQyu6CcvfBO3aXfDY/JLk2Y3Ci6Y5AO/jImu/6zNC4VEYkm4XYvwOVaAMdJZOyZ6rcHOZQ0Gs3B+ziEpaVluJwusE4W83Mc/PMr4IU8ke+q5srULBWEp/D5ohg3jiMWjmEru4XCdgFxPo7JySkEAiJ4Pq/I7adm6RwRuhwepJNpPFl/gt2nuyg9K8niRDyBh6NGIo4rcvtRSte2EA6OQ6dtVJU+JtPqYBxIJVKydK+wJ0t3cjsQRRF+nx+2WZZMtajIllFK03mEY3PQnT2tKg0EVuBhPZAkCZm1DAo7BbnKTDqDGB9DeDmMR48mwTABRbaMQjqxtI4gvwTdOa2qlAsKJOSDIApI/JlALpvD5sYmkokkWUse0UgUo6OjMFtYRbaMQnp5yAG3w4A3T79etVLWzcoCOp202o30BlLJFMQ4bSL+b6m5BqmutR9jpj40VZE6HQuYIl1KK1pPrcvrupnZlKHylcgKjEYjrFavIltGIdWe78PDmepSjycEs8mGSCiCTCqDbDori2nFoiDCbrWTRnJicbF6B9csDYU2wLJBzFpnIcZEpFZTSK4mEQ1HwdgZDP88jMHB+zCZSbMdyJapWUr5YzkNi8WBRT8HLsCR3WgerMsL07QNQ/d/xLXr13Gn/x5s9kXV/KGkEtnmBGEbXjYAq5nB9JSFVOlFMJjAxMQMurpuob29Hbe+/IZ0+xppsBf35MNJn0M3eDFerED3XEEsoKfnDvR6Pb41DJDnXoTC2RdyCulvDA+/wEN7/ty/Sqvh8wn46usBXHr/Em7c+Azf/zACf0D65/1BKb1RXvY8NVn8+LyrFxffu4jOq1fB/M5V3tVNSrExHDo6r6H9ow9hnZ2vjNdVSteZCyZxu/8uXO5QZbyuUgptrhg5X/d3cN2laiik03YWlKYW9aPtKChLv+jpk10ahmHIWcigpaUFra3vwmD46cjp6h7AyZOvkn+4R3Zp8Pxqa2tDQ0NDXbFarbKrIi0Wi8jn83WlVCrJror0+C7gL3AsWLyHbPw+AAAAAElFTkSuQmCC" InformativeScreenshot="ddba77f6f0c40663919a69724c411115.png" ScopeSelectorArgument="&lt;wnd app='uniges_v4.exe' ctrlname='Principal' /&gt;&lt;wnd ctrlname='TableR' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="2" Y="-1" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'WindowsForms10.EDIT.app…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d92e0d8a-68ed-46cd-8876-234c439bd223" Text="Prof" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="85, 45, 178, 29" ElementType="InputBox" FriendlyName="'WindowsForms10.EDIT.app…'" FullSelectorArgument="&lt;wnd ctrlname='DgvFilterHost' /&gt;&lt;wnd ctrlname='panelFilterArea' /&gt;&lt;wnd ctrlname='DgvTextBoxColumnFilter' /&gt;&lt;wnd ctrlname='textBoxValue' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='DgvFilterHost' /&gt;&lt;wnd ctrlname='panelFilterArea' /&gt;&lt;wnd ctrlname='DgvTextBoxColumnFilter' /&gt;&lt;wnd ctrlname='textBoxValue' /&gt;" Guid="cfbebdaa-3f2c-4741-9879-f04fbed9867d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALYAAAAhCAYAAAB0k1H/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEDSURBVHhe7dIxagJhFEVhN5CN2LuAFLa2WoVsQyzsLVJZSRpTKJgNKEIgG7DWIg4atRhRTDESZ3CezOtCwP6/nA9uc+tTMkAQYUOSh/2b5fb8vrPH3oqxYNeaxB51wcNO0quVX5bWGG6t83lgLLhVX9dW63971IU/Yb/NTn4CoWlP94QNPYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSYQNSXfDbo5j+/hKGAtuT6Pd/7DPaW6VbmQP7QVjwa4+2HrUBQ/7mptFx9Tm8YWxYLf5yTzqgocNaDG7Acs3GCX3SC1KAAAAAElFTkSuQmCC" InformativeScreenshot="c1a344b6d6c4835dcbeb8b87bf350d6c.png" ScopeSelectorArgument="&lt;wnd aaname='DropDown' app='uniges_v4.exe' cls='WindowsForms10.Window.*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-10, -10, 1940, 1050" FilePath="C:\erp\uniges_v4.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMMSURBVFhH7ddNSBRhHMfxZ9ldRTAkImKIDh07dIgYonNniY6dI2JZ9lq5aYSXdVsqUQrDSEl8K1+yrslahh2SojBDBUmx1HR3NdnDwyL/fs+suzv7zDPOA/Zy8fBhZ4Zn5vnivMqIyPc/7QcoA9hQ5hhcgFqJXzVe5cDV0RNwHmptxHrQPs4RgEmOQwpIwqFSHq9SEU2alXVJDqRw0D7WGTCYuQKkwEErIHDr7R3WME6+m0o19rGKgDQC0pjQAQFprQDWOJFgje/IhcdfYGA9BOTwbJ2DXkDsfQLIhUfA07UQkAIHvYDbHxIs8ZFceAT0rYaAFDjoBdz7nABy4RHQvRxmPcukwEEvoOVLAsjSOi3zCOhaCgPlfbfjoBdwfyYOVOZB0aGysfYVa0PHQph1LpICB72Ah3NxIBceAY/mw0AKHPQC2ufjQC48AtrmIkAKHPQCHn+LA7nwCGidjkgXTQEHvYDOxbjt1Mk8Au5+igCVs24fDnoBXUux0oXscLhsrH3F2tA0GQFicRux3jTJQS+g+0cMqAS3cYlHQONEBPDMduCgF9C7EgNysXtA4MbrCJCdv97CA9dH9QL6VmOs7yeenkpHysbaV4Tq+vFQdcN4DrKWeuFNtjo6lvX1LJ9lT5ZMPCtM3JIma5s1cWGauDZMnB4TbzrTf+3VaYxrl94jef1rm/itss/nPAUvty7DNhvZyrGRXzn2fCPHhjM5NpjKWY9kcSF1LOSfDW2z+TtEPOPFdYLXrT86RsHmqQzGizdoSf/ads1w6qJjPseGIXyQiC8g6yME3wFiZ1EvXkgaAYFokoIt0/iiwr4DiMgTr/JaeS5rPseGPxUwvJHffzCdhXPyPAV/OSCziWOckeewUwVc2nNA61cEbKZwjFPy8WWqgCMwt5eAiuapGfZi66R8bBVHgLVxKBNEgIEAAwEGAgwEGAgwEGAgwECAgQADAQYCDAQYCDACdcmjldGxsm//3SgD/qX9AOdF2LviF6T1IFQKO9uqdrYXFM85lov/+RSW8Wvft7hMRL7fWaOadDTo1Z8AAAAASUVORK5CYII=" InformativeScreenshot="5737b866dcc4366221320d4bc77486c4.png" Selector="&lt;wnd app='uniges_v4.exe' ctrlname='Principal' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
